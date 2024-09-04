@@ -126,3 +126,25 @@ function iniciarJogo() {
 }
 
 iniciarJogo();
+
+/*/*
+
+
+function lidarComCombate(inimigo, opcoes) {
+
+}
+
+function explorarCaverna() {
+     }
+
+    if (/* condição para encontrar o monstro *) {
+        lidarComCombate("Criatura Horrível", ["Fugir", "Atacar", "Lançar Bola de Fogo"]); 
+    }
+}
+
+function aventuraCaverna() {
+    explorarCaverna();
+    maisfunções();
+}
+
+/*/
