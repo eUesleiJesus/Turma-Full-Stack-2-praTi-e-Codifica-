@@ -54,5 +54,6 @@ function verificarTriangulo(ladoA, ladoB, ladoC) {
 
   console.log(ladoA.toFixed(4), ladoB.toFixed(4), ladoC.toFixed(4)); 
   console.log(verificarTriangulo(ladoA, ladoB, ladoC)); 
+  console.log(calcularAreaTriangulo(ladoA, ladoB, ladoC));
 
   
