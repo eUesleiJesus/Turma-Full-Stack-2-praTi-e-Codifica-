@@ -21,17 +21,6 @@ function verDesconto(desconto){
 // Ler o número de maçãs compradas
 // const numeroMaças = parseInt(prompt("Digite o número de maçãs compradas: "));
 
-
-// Calcular o valor totalda compra
-let numMaxMaças = 30;
-let quantCompras = 10;
-
-for (let i = 0; i < quantCompras; i++) {
-  var numeroMaças = parseInt(1 + Math.random() * numMaxMaças);
-  var valorTotal = valorDaCompra(numeroMaças);
-  console.log(`O valor total da compra de ${numeroMaças} Maçãs é: R$ ${valorTotal.toFixed(2)}`);
-}    
-
 function valorDaCompra(numeroMaças) {
   const umaDuzia = 12;
   let valorTotal;
@@ -42,5 +31,36 @@ function valorDaCompra(numeroMaças) {
   }
   return valorTotal;
 }
+
+
+function valorDaCompra(numeroMaças) {
+  const umaDuzia = 12;
+  let valorTotal;
+
+  if (numeroMaças < umaDuzia) {
+  valorTotal = numeroMaças * 0.30;
+  } else {
+  valorTotal = numeroMaças * 0.25;
+  }
+  return valorTotal;
+}
+// Calcular o valor totalda compra
+function compra() {
+
+  let numMaxMaças = 30;
+  let quantCompras = 10;
+  
+  for (let i = 0; i < quantCompras; i++) {
+    var numeroMaças = parseInt(1 + Math.random() * numMaxMaças);
+    
+    var valorTotal = valorDaCompra(numeroMaças);
+    text = `O valor total da compra de ${numeroMaças} Maçãs é: R$ ${valorTotal.toFixed(2)}`;
+    console.log(text);
+  }    
+
+}
+
+compra()
+
 
 // Escrever o valor total da compra
