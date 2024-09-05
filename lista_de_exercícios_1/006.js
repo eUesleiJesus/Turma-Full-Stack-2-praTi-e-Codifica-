@@ -52,16 +52,6 @@ function verificarTriangulo(ladoA, ladoB, ladoC) {
     }
   }
 
-  function calcularAreaTriangulo(ladoA, ladoB, ladoC) {
-    // calcular o semiperímetro
-    const s = (ladoA + ladoB + ladoC) / 2;
-
-    // calcular a área usando a fórmula de Herão
-    const area = Math.sqrt(s * (s - ladoA) * (s - ladoB) * (s - ladoC));
-    const text = "A área do triângulo é: " + area.toFixed(4) + " u.a.";
-    return text ;
-  }
-
   console.log(ladoA.toFixed(4), ladoB.toFixed(4), ladoC.toFixed(4)); 
   console.log(verificarTriangulo(ladoA, ladoB, ladoC)); 
   console.log(calcularAreaTriangulo(ladoA, ladoB, ladoC));
